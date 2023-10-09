@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+.scrollsite {
+    position: relative;
+    overflow: auto;
+    height: 500px;
+}
+
+footer {
+    background-color: rgb(42, 50, 58);
+    color: #fff;
+    position: fixed;
+    text-align: center;
+}

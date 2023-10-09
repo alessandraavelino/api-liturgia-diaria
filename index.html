@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liturgia Diária</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav id="navbar-example2" class="navbar bg-body-tertiary px-2 mb-3">
+        <a class="navbar-brand" href="#">Liturgia Diária</a><span class="data"></span>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link custom-active" href="#scrollspyHeading1">1ª Leitura</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-active" href="#scrollspyHeading2">2ª Leitura</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-active" href="#scrollspyHeading3">Salmo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-active" href="#scrollspyHeading4">Evangelho</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-active" href="#scrollspyHeading5">Reflexão</a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example2"
+        data-bs-root-margin="0px 0px -10%"
+        data-bs-smooth-scroll="true"
+        class="scrollspy-example bg-body-tertiary p-3 rounded-2 scrollsite"
+        tabindex="0"
+      >
+        <h4 id="scrollspyHeading1">Primeira Leitura</h4>
+        <p class="refPrimeiraLeitura"></p>
+        <p class="tituloPrimeiraLeitura"></p>
+        <p class="primeiraLeitura"></p>
+
+        <h4 id="scrollspyHeading2">Segunda Leitura</h4>
+        <p class="tituloSegundaLeitura"></p>
+        <p class="refSegundaLeitura"></p>
+        <p class="segundaLeitura"></p>
+
+
+        <h4 id="scrollspyHeading3">Salmo</h4>
+        <p class="refSalmo"></p>
+        <p class="salmo"></p>
+
+        <h4 id="scrollspyHeading4">Evangelho</h4>
+        <p class="refEvangelho"></p>
+        <p class="tituloEvangelho"></p>
+        <p class="textoEvangelho"></p>
+        <h4 id="scrollspyHeading5">Reflexão partilhada</h4>
+        <div class="mb-3">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Reflexão..."></textarea>
+          </div>
+          <div class="text-center">
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
+        <div class="card border-dark mt-4" style="max-width: 100%;">
+            <div class="card-header">Alessandra Avelino</div>
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer class="fixed-bottom">Desenvolvido com 💓por Alessandra</footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
